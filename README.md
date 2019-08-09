@@ -3,6 +3,7 @@
 ## Easy
 
 - [1. Two Sum [两数之和]](./answers/1.py)
+- [20. Valid Parentheses[有效的括号]](./answers/20.py)
 - [242. Valid Anagram [有效的字母异位词]](./answers/242.py)
 
 ## Medium
