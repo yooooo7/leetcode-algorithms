@@ -5,6 +5,7 @@
 - [1. Two Sum [两数之和]](./answers/1.py)
 - [20. Valid Parentheses[有效的括号]](./answers/20.py)
 - [70. 爬楼梯(动态规划)](./answers/70.py)
+- [121. 买卖股票的最佳时机(动态规划)](./answers/70.py)
 - [242. Valid Anagram [有效的字母异位词]](./answers/242.py)
 
 ## Medium
