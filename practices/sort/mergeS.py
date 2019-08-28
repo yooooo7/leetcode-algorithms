@@ -1,4 +1,4 @@
-from data import test_data
+test_data = [5, 4, 123, 43294, 573, 5, 58, 984, 58, 48, 48, 249]
 
 def mergeSort(L: list):
     l = L.copy()
@@ -21,7 +21,7 @@ def merge(left_l, right_l):
         left_item = left_l[idx_l]
         right_item = right_l[idx_r]
 
-        if left_item < right_item:
+        if left_item <= right_item:
             res_list.append(left_item)
             idx_l += 1
         else:

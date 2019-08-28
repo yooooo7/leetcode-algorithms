@@ -4,14 +4,14 @@ def bubbleSort(L: list) -> list:
     l = L.copy()
     n = len(l)
 
-    exchange = False
-
     for i in range(n):
-        for j in range(n-i-1):
+        ifExchange = False
+        for j in range(0, n - i - 1):
             if l[j] > l[j+1]:
                 l[j], l[j+1] = l[j+1], l[j]
-                exchange = True
-        if not exchange:
+                ifExchange = True
+        
+        if not ifExchange:
             break
     
     return l
