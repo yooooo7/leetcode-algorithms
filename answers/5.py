@@ -1,21 +1,24 @@
 class Solution:
     def longestPalindrome(self, s: str) -> str:
-        length = len(s)
-        if length <= 1: return s
+        n = len(s)
         
-        dp = [[False for _ in range(length)] for _ in range(length)]
+        if n <= 1:
+            return s
         
-        longest_length = 1
-        result = s[0]
+        dp = [[False for _ in range(n)] for _ in range(n)]
+        longest_substring = s[0]
         
-        for r in range(1, length):
-            for l in range(r):
-                if s[l] == s[r] and (l+1 >= r-1 or dp[l+1][r-1]):
-                    dp[l][r] = True
-                    
-                    cur_length = r - l + 1
-                    if cur_length > longest_length:
-                        longest_length = cur_length
-                        result = s[l: r+1]
+        for i in range(n):
+            dp[i][i] = True
         
-        return result
+        for left in range(n - 2, -1, -1):
+            for right in range(left + 1, n):
+                if left + 1 <= right - 1:
+                    dp[left][right] = s[left] == s[right] and dp[left+1][right-1]
+                else:
+                    dp[left][right] = s[left] == s[right]
+        
+                if dp[left][right] and (right - left + 1) > len(longest_substring):
+                    longest_substring = s[left: right + 1]
+
+        return longest_substring
