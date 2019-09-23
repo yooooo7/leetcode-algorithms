@@ -4,6 +4,7 @@
 
 - [1. Two Sum [两数之和]](./answers/1.py)
 - [20. Valid Parentheses[有效的括号]](./answers/20.py)
+- [53. 最大子序和(动态规划)](./answers/53.py)
 - [69. x的平方根(二分查找/牛顿法未完成)](./answers/69.py)
 - [70. 爬楼梯(动态规划)](./answers/70.py)
 - [121. 买卖股票的最佳时机(动态规划)](./answers/70.py)
